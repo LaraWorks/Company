@@ -59,4 +59,40 @@
         </div>
     </section>
     {{-- End Slider--}}
+    {{-- Services --}}
+    <section class="mt-3 mb-3">
+        <div class="title text-center">
+            <h2 class="fw-bold">خدمات ما</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card rounded-3 text-center">
+                    <div class="card-body">
+                        <i class="fa-brands fa-laravel fa-4x"></i>
+                        <h2 class="fs-4 fw-bold mt-3 mb-3">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded-3 text-center">
+                    <div class="card-body">
+                        <i class="fa-brands fa-laravel fa-4x"></i>
+                        <h2 class="fs-4 fw-bold mt-3 mb-3">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded-3 text-center">
+                    <div class="card-body">
+                        <i class="fa-brands fa-laravel fa-4x"></i>
+                        <h2 class="fs-4 fw-bold mt-3 mb-3">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- End Services --}}
 </x-HomeLayout>
