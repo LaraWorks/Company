@@ -65,7 +65,7 @@
             <h2 class="fw-bold">خدمات ما</h2>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card rounded-3 text-center">
                     <div class="card-body">
                         <i class="fa-brands fa-laravel fa-4x"></i>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card rounded-3 text-center">
                     <div class="card-body">
                         <i class="fa-brands fa-laravel fa-4x"></i>
@@ -83,7 +83,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
+                <div class="card rounded-3 text-center">
+                    <div class="card-body">
+                        <i class="fa-brands fa-laravel fa-4x"></i>
+                        <h2 class="fs-4 fw-bold mt-3 mb-3">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
                 <div class="card rounded-3 text-center">
                     <div class="card-body">
                         <i class="fa-brands fa-laravel fa-4x"></i>
@@ -95,4 +104,103 @@
         </div>
     </section>
     {{-- End Services --}}
+    {{-- Portfolios --}}
+    <section class="mb-3">
+        <div class="title text-center">
+            <h2 class="fw-bold">نمونه کارهای ما</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 mb-4">
+                <article class="portfolios">
+                    <div class="img-box">
+                        <img src="{{ asset('img/laravel.png') }}" class="img-fluid" alt="" srcset="">
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="content">
+                                    <a href="#" class="btn btn-outline-warning"><i class="fa-duotone fa-eye"></i> مشاهده نمونه کار </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+    {{-- End Portfolios --}}
 </x-HomeLayout>

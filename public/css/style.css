@@ -50,3 +50,72 @@ body {
     bottom: -1px;
     left: calc(50% - 20px);
 }
+
+/* Portfolios */
+
+.portfolios{
+    position: relative;
+}
+
+.portfolios .img-box{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.portfolios .img-box img{
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+}
+
+.overlay{
+    background-color: transparent;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: background-color 0.4s ease 0s;
+}
+
+.overlay .box{
+    border: 2px solid transparent;
+    display: table;
+    height: 100%;
+    width: 100%;
+    transition: border 0.4s ease 0s;
+}
+
+.overlay .box .content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.overlay .box .content a{
+    padding: 9.5px 24px;
+    transform: translate3d(0px, -75px, 0px);
+    transition: all 0.4s ease 0s !important;
+    opacity: 0;
+}
+
+.portfolios:hover .img-box .overlay{
+    background-color: rgba(1, 48, 94, 0.85);
+    border-radius: 15px;
+}
+
+.portfolios:hover .img-box .overlay .box{
+    border-color: #ff8d00;
+    border-radius: 15px;
+}
+
+.portfolios:hover .img-box .overlay .box .content a{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.portfolios:hover .img-box img{
+    transform: scale(1.1);
+    border-radius: 15px;
+}
