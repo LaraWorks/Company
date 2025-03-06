@@ -320,8 +320,41 @@
                     </div>
                 </article>
             </div>
-            
+
         </div>
     </section>
+    {{-- End Blog --}}
+    {{-- Footer --}}
+    <footer class="card rounded-4 mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="fs-5 fw-bold"><i class="fa-duotone fa-circle"></i> درباره ما </h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fs-5 fw-bold"><i class="fa-duotone fa-link"></i> پیوند های مفید </h2>
+                    <ul>
+                        <li>تست</li>
+                        <li>تست</li>
+                        <li>تست</li>
+                        <li>تست</li>
+                        <li>تست</li>
+                        <li>تست</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fs-5 fw-bold"><i class="fa-duotone fa-share"></i> ارتباط با ما </h2>
+
+                    <ul class="mt-4">
+                        <li><i class="fa-duotone fa-mobile"></i> شماره موبایل : 0921000000</li>
+                        <li><i class="fa-duotone fa-phone"></i> شماره تماس : 02100000000</li>
+                        <li><i class="fa-duotone fa-at"></i> ایمیل : test@gmail.com </li>
+                        <li><i class="fa-duotone fa-location"></i> آدرس شرکت : تهران - پردیس </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     {{-- End Blog --}}
 </x-HomeLayout>
