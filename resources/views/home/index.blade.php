@@ -231,4 +231,33 @@
         </div>
     </section>
     {{-- End Portfolios --}}
+    {{-- Company Statistics --}}
+    <section class="mt-4 mb-4">
+        <div class="title text-center">
+            <h2 class="fw-bold">آمار شرکت</h2>
+        </div>
+        <div class="card text-center rounded-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1 class="fw-bold">100+</h1>
+                        <p class="fw-bold">لورم ایپسوم</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1 class="fw-bold">100+</h1>
+                        <p class="fw-bold">لورم ایپسوم</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1 class="fw-bold">100+</h1>
+                        <p class="fw-bold">لورم ایپسوم</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1 class="fw-bold">100+</h1>
+                        <p class="fw-bold">لورم ایپسوم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- End Company Statistics  --}}
 </x-HomeLayout>
