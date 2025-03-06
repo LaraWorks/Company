@@ -260,4 +260,68 @@
         </div>
     </section>
     {{-- End Company Statistics  --}}
+    {{-- Blog  --}}
+    <section class="mt-4 mb-4">
+        <div class="title text-center">
+            <h2 class="fw-bold">وبلاگ</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <article class="card rounded-4">
+                    <div class="card-body">
+                        <figure>
+                            <img src="{{ asset('img/laravel.png') }}" class="img-fluid rounded-4" alt="" srcset="">
+                        </figure>
+                        <h2 class="fs-4 fw-bold">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                        <div class="mt-3">
+                            <i class="fa-duotone fa-heart"></i> 50
+                            <div class="float-end">
+                                <i class="fa-duotone fa-comment"></i> 50
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <article class="card rounded-4">
+                    <div class="card-body">
+                        <figure>
+                            <img src="{{ asset('img/laravel.png') }}" class="img-fluid rounded-4" alt="" srcset="">
+                        </figure>
+                        <h2 class="fs-4 fw-bold">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                        <div class="mt-3">
+                            <i class="fa-duotone fa-heart"></i> 50
+                            <div class="float-end">
+                                <i class="fa-duotone fa-comment"></i> 50
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <article class="card rounded-4">
+                    <div class="card-body">
+                        <figure>
+                            <img src="{{ asset('img/laravel.png') }}" class="img-fluid rounded-4" alt="" srcset="">
+                        </figure>
+                        <h2 class="fs-4 fw-bold">لورم ایپسوم</h2>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                        <div class="mt-3">
+                            <i class="fa-duotone fa-heart"></i> 50
+                            <div class="float-end">
+                                <i class="fa-duotone fa-comment"></i> 50
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+        </div>
+    </section>
+    {{-- End Blog --}}
 </x-HomeLayout>
