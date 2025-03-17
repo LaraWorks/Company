@@ -2,8 +2,9 @@
     <div class="col-md-4 offset-md-4">
         <div class="card rounded-4 mt-4">
             <div class="card-body">
-                <form action="{{ route('users.store', $user->id) }}" method="POST">
+                <form action="{{ route('users.update', $user->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="mb-3">
                         <label for="Input1" class="form-label">نام و نام خانوادگی :</label>
                         <input type="text" class="form-control rounded-5 @error('name') is-invalid @enderror" name="name" id="Input1" value="{{ $user->name }}">
