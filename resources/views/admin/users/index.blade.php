@@ -1,7 +1,7 @@
 <x-AdminLayout>
     <div class="card rounded-4">
         <div class="card-body">
-            <button type="button" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> افزودن کاربر جدید </button>
+            <a href="{{ route('users.create') }}" type="button" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> افزودن کاربر جدید </a>
             <table class="table table-bordered mt-4">
                 <thead>
                 <tr>
@@ -14,17 +14,20 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td class="text-center">
-                        <i class="fa-duotone fa-edit"></i>
-                        <i class="fa-duotone fa-trash text-danger"></i>
-                    </td>
-                </tr>
+                    @foreach($users as $row)
+                        <tr>
+                            <th scope="row">{{ $row->id }}</th>
+                            <td>{{ $row->name }}</td>
+                            <td>{{ $row->email }}</td>
+                            <td>{{ $row->getRolePersian() }}</td>
+                            <td>{{ $row->created_at }}</td>
+                            <td class="text-center">
+                                <a href="{{ route('users.edit', $row->id) }}"><i class="fa-duotone fa-edit text-secondary"></i></a>
+                                <a onclick="event.preventDefault();document.getElementById('trash-{{$row->id}}').submit()"><i class="fa-duotone fa-trash text-danger"></i></a>
+                                <form id="trash-{{$row->id}}" action="{{ route('users.destroy', $row->id) }}" method="POST">@csrf @method('DELETE')</form>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
