@@ -27,7 +27,8 @@ class UserController extends Controller
         $data['password'] = hash::make('password');
 
         User::create($data);
-        return to_route('users.index');
+
+        return to_route('users.index')->with('success', 'کاربر جدید با موفقیت ایجاد شد.');
     }
 
     public function show(User $user){}
@@ -39,12 +40,12 @@ class UserController extends Controller
     public function update(UserUpdateRequest $request, User $user)
     {
         $user->update($request->validated());
-        return to_route('users.index');
+        return to_route('users.index')->with('success', 'کاربر جدید با موفقیت به روز رسانی ایجاد شد.');;
     }
 
     public function destroy(User $user)
     {
         $user->delete();
-        return back();
+        return back()->with('success', 'کاربر جدید با موفقیت حذف ایجاد شد.');;
     }
 }

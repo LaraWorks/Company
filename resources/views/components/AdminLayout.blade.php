@@ -7,6 +7,7 @@
     <title>ادمین رنجر </title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin/style.css') }}">
 </head>
 <body>
@@ -29,6 +30,17 @@
 
 <!-- Script -->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/toastr.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+<script>
+    @foreach(["message", "success", "error", 'info', 'warning'] as $row)
+         @if(Session::has($row))
+              toastr.options = {
+                  "progressBar": true
+              };
+              toastr["{{$row}}"]("{{ session($row) }}");
+         @endif
+    @endforeach
+</script>
 </body>
 </html>
