@@ -40,12 +40,12 @@ class UserController extends Controller
     public function update(UserUpdateRequest $request, User $user)
     {
         $user->update($request->validated());
-        return to_route('users.index')->with('success', 'کاربر جدید با موفقیت به روز رسانی ایجاد شد.');;
+        return to_route('users.index')->with('success', 'کاربر جدید با موفقیت به روز رسانی ایجاد شد.');
     }
 
     public function destroy(User $user)
     {
         $user->delete();
-        return back()->with('success', 'کاربر جدید با موفقیت حذف ایجاد شد.');;
+        return back()->with('success', 'کاربر جدید با موفقیت حذف ایجاد شد.');
     }
 }

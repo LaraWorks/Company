@@ -1,4 +1,7 @@
 <x-AdminLayout>
+    <x-slot name="title">
+        - مدیریت کاربران
+    </x-slot>
     <div class="card rounded-4">
         <div class="card-body">
             <a href="{{ route('users.create') }}" type="button" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> افزودن کاربر جدید </a>

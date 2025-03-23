@@ -1,4 +1,7 @@
 <x-AdminLayout>
+    <x-slot name="title">
+        - ایجاد کاربر جدید
+    </x-slot>
     <div class="col-md-4 offset-md-4">
         <div class="card rounded-4 mt-4">
             <div class="card-body">

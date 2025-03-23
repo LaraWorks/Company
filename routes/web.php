@@ -18,6 +18,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], static function ($ro
     // Users
 
     $router->resource('/users', \App\Http\Controllers\Admin\UserController::class);
+
+    // Categories
+
+    $router->resource('/categories', \App\Http\Controllers\Admin\CategoryController::class);
 });
 
 Auth::routes();
