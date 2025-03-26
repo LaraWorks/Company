@@ -20,7 +20,7 @@
                             <option selected>انتخاب کنید ... </option>
                             <option value="">ندارد</option>
                             @foreach($parentCategories as $row)
-                                <option value="{{ $row->id}}" @if($row->id === $category->id) selected @endif>{{ $row->name }}</option>
+                                <option value="{{ $row->id}}" @if($row->id === $category->category_id) selected @endif>{{ $row->name }}</option>
                             @endforeach
                         </select>
                         @error('category_id') {{ $message }} @enderror

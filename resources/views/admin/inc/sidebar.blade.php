@@ -19,7 +19,7 @@
             <a href="{{ route('index') }}" class="btn {{ request()->routeIs('index') ? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-home me-2"></i> پیشخوان </a>
             <a href="{{ route('users.index') }}" class="btn {{ request()->routeIs('users.index') || request()->routeIs('users.create') || request()->routeIs('users.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-users me-2"></i> کاربران </a>
             <a href="{{ route('categories.index') }}" class="btn {{ request()->routeIs('categories.index') || request()->routeIs('categories.create') || request()->routeIs('categories.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-list-tree me-2"></i> دسته بندی </a>
-
+            <a href="{{ route('sliders.index') }}" class="btn {{ request()->routeIs('sliders.index') || request()->routeIs('sliders.create') || request()->routeIs('sliders.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-sliders me-2"></i> اسلایدرها </a>
         </div>
     </div>
 </div>
