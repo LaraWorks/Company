@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Slider\CreateSliderRequest;
 use App\Http\Requests\Slider\UpdateSliderRequest;
 use App\Models\Slider;
-use Illuminate\Support\Facades\Storage;
 
 class SliderController extends Controller
 {

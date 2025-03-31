@@ -26,6 +26,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], static function ($ro
     // Sliders
 
     $router->resource('/sliders', \App\Http\Controllers\Admin\SliderController::class);
+
+    // Services
+
+    $router->resource('/services', \App\Http\Controllers\Admin\ServiceController::class);
 });
 
 Auth::routes();
