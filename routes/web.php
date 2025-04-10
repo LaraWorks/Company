@@ -30,6 +30,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], static function ($ro
     // Services
 
     $router->resource('/services', \App\Http\Controllers\Admin\ServiceController::class);
+
+    // About ME
+
+    $router->resource('/abouts', \App\Http\Controllers\Admin\AboutController::class);
 });
 
 Auth::routes();
