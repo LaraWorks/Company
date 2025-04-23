@@ -31,9 +31,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], static function ($ro
 
     $router->resource('/services', \App\Http\Controllers\Admin\ServiceController::class);
 
-    // About ME
+    // About US
 
     $router->resource('/abouts', \App\Http\Controllers\Admin\AboutController::class);
+
+    // Items Portfolio
+
+    $router->resource('/items', \App\Http\Controllers\Admin\ItemController::class);
 });
 
 Auth::routes();

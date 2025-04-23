@@ -22,6 +22,7 @@
             <a href="{{ route('sliders.index') }}" class="btn {{ request()->routeIs('sliders.index') || request()->routeIs('sliders.create') || request()->routeIs('sliders.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-sliders me-2"></i> اسلایدرها </a>
             <a href="{{ route('services.index') }}" class="btn {{ request()->routeIs('services.index') || request()->routeIs('services.create') || request()->routeIs('services.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-boxes-stacked me-2"></i> خدمات ما </a>
             <a href="{{ route('abouts.index') }}" class="btn {{ request()->routeIs('abouts.index') || request()->routeIs('abouts.create') || request()->routeIs('abouts.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-user-pen me-2"></i> درباره ما </a>
+            <a href="{{ route('items.index') }}" class="btn {{ request()->routeIs('items.index') || request()->routeIs('items.create') || request()->routeIs('items.edit')? 'btn-light text-start border-0 active' : 'btn-light text-start border-0' }} rounded-3 mb-2"><i class="fa-duotone fa-list-tree me-2"></i> دسته بندی نمونه کار </a>
         </div>
     </div>
 </div>
