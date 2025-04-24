@@ -25,7 +25,7 @@
                         </select>
                         @error('category_id') {{ $message }} @enderror
                     </div>
-                    <button type="submit" class="btn btn-primary">ثبت دسته بندی</button>
+                    <button type="submit" class="btn btn-primary rounded-5">به روز رسانی دسته بندی</button>
                 </form>
             </div>
         </div>
