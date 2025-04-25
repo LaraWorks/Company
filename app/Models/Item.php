@@ -10,4 +10,9 @@ class Item extends Model
         'title',
         'slug'
     ];
+
+    public function portfolios(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(Portfolio::class);
+    }
 }
