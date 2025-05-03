@@ -8,11 +8,12 @@ class Item extends Model
 {
     protected $fillable = [
         'title',
-        'slug'
+        'slug',
+        'item_id'
     ];
 
     public function portfolios(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(Portfolio::class);
+        return $this->belongsToMany(Portfolio::class, 'portfolio_item');
     }
 }

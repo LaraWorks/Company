@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Portfolio\CreatePortfolioRequest;
+use App\Http\Requests\Portfolio\UpdatePortfolioRequest;
+use App\Models\Item;
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
 
@@ -13,7 +16,9 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view('admin.portfolios.index');
+        $portfolios = Portfolio::with('items')->get();
+        $items = Item::all();
+        return view('admin.portfolios.index', compact('portfolios', 'items'));
     }
 
     /**
@@ -21,15 +26,28 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        $items = Item::all();
+        return view('admin.portfolios.create', compact('items'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CreatePortfolioRequest $request)
     {
-        //
+        $data = $request->validated();
+
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $file->storeAs('files/portfolios/images', $fileName, 'public_files');
+            $data['image'] = $fileName;
+        }
+
+        $portfolio = Portfolio::create($data);
+        $portfolio->items()->attach($request->items);
+
+        return to_route('portfolios.index')->with('success', 'نمونه کار جدید ایجاد شد.');
     }
 
     /**
@@ -45,15 +63,26 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('admin.portfolios.edit', compact('portfolio'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Portfolio $portfolio)
+    public function update(UpdatePortfolioRequest $request, Portfolio $portfolio)
     {
-        //
+        $data = $request->validated();
+
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $file->storeAs('files/portfolios/images', $fileName, 'public_files');
+            $data['image'] = $fileName;
+        }
+
+        $portfolio->update($data);
+
+        return to_route('portfolios.index')->with('success', 'نمونه کار جدید ویرایش شد.');
     }
 
     /**
@@ -61,6 +90,7 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        //
+        $portfolio->delete();
+        return back()->with('success', 'نمونه کار حذف شد.');
     }
 }

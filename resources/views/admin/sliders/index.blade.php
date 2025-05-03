@@ -5,7 +5,7 @@
 
     <div class="card rounded-4">
         <div class="card-body">
-            <a href="{{ route('sliders.create') }}" type="button" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> افزودن کاربر جدید </a>
+            <a href="{{ route('sliders.create') }}" type="button" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> افزودن اسلایدر جدید </a>
             <table class="table table-bordered mt-4">
                 <thead>
                 <tr>
